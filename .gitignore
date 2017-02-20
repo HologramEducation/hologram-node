@@ -1,0 +1,7 @@
+/dist/
+/node_modules/
+/test/test_data.js
+/examples/example1/node_modules/
+/.idea/
+*.iml
+*.DS_Store

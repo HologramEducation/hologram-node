@@ -1,0 +1,21 @@
+{
+  "name": "hologram-node",
+  "version": "0.0.1",
+  "description": "Holograms API client library for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha",
+    "gen-readme": "node readme.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "deep-clone": "3.0.2",
+    "lodash": "4.17.4",
+    "needle": "1.4.3",
+    "query-string": "4.3.1"
+  },
+  "devDependencies": {
+    "mocha": "3.2.0"
+  }
+}
