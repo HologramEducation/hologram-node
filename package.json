@@ -1,6 +1,6 @@
 {
   "name": "hologram-node",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Holograms API client library for node.js",
   "main": "index.js",
   "keywords": [
@@ -8,6 +8,10 @@
     "iot"
   ],
   "homepage": "https://github.com/hologram-io/hologram-node",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hologram-io/hologram-node"
+  },
   "scripts": {
     "test": "node_modules/mocha/bin/mocha",
     "gen-readme": "node readme.js"
