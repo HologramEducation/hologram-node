@@ -168,7 +168,6 @@ describe('Link: ', function() {
 
       HologramAPI.Link.changePlan(TEST_ACCOUNT.DEVICES[0].linkid, 75, 2)
         .then((mockData) => {
-          console.log(JSON.stringify(mockData.body));
           assert(mockData.url === "https://knkdt.com/api/1/links/cellular/231675/changeplan?apikey=9EfHdB5dNN82M6PRV2YyfFC6r5Xprd&orgid=1206");
           assert(mockData.method === "post");
           assert(JSON.stringify(mockData.body) === '{"planid":75,"tier":2}');

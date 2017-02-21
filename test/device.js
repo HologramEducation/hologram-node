@@ -177,7 +177,12 @@ describe('Device: ', function() {
     it(`it should successfully complete`, function(done) {
 
       HologramAPI.Device.sendData([TEST_ACCOUNT.DEVICES[0].id], "test message", "1234", "TCP")
-        .then(() => {
+        .then((mockData) => {
+
+          assert(mockData.url === "https://knkdt.com/api/1/devices/messages?apikey=9EfHdB5dNN82M6PRV2YyfFC6r5Xprd&orgid=1206");
+          assert(mockData.method === "post");
+          assert(JSON.stringify(mockData.body) === `{"deviceids":[138],"data":"test message","port":"1234","protocol":"TCP"}`);
+
           done();
         })
         .catch((e) => {
@@ -246,7 +251,12 @@ describe('Device: ', function() {
     it(`it should successfully complete`, function(done) {
 
       HologramAPI.Device.sendSMS(TEST_ACCOUNT.DEVICES[0].id, "test message", {fromnumber: "1234567890"})
-        .then(() => {
+        .then((mockData) => {
+
+          assert(mockData.url === "https://knkdt.com/api/1/sms/incoming/?apikey=9EfHdB5dNN82M6PRV2YyfFC6r5Xprd&orgid=1206");
+          assert(mockData.method === "post");
+          assert(JSON.stringify(mockData.body) === `{"deviceid":138,"body":"test message","fromnumber":"1234567890"}`);
+
           done();
         })
         .catch((e) => {

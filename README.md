@@ -14,7 +14,7 @@ Holograms API client library for node.js
 ```
 var Hologram = require('hologram-node');
 
-var HologramAPI = Hologram("Your api key from the dashboard.", {
+var HologramAPI = Hologram("Your API key from the dashboard", {
   orgid: "Your orgId from the dashboard"
 });
 ```
@@ -30,7 +30,7 @@ var HologramAPI = Hologram("Your api key from the dashboard.", {
 
   var Hologram = require('hologram-node');
 
-  var HologramAPI = Hologram("Your api key from the dashboard.", {
+  var HologramAPI = Hologram("Your API key from the dashboard", {
     orgid: "Your orgId from the dashboard"
   });
   
@@ -52,7 +52,6 @@ var HologramAPI = Hologram("Your api key from the dashboard.", {
 
 ## API:
 
-___
 
     
 **HologramAPI.Account.me()**
@@ -215,13 +214,13 @@ Required:
     
 
     
-**HologramAPI.Device.getOne(deviceId)**
+**HologramAPI.Device.getOne(deviceid)**
   
 Get one of your devices.
 
 
 Required:
-- deviceId *[string]*
+- deviceid *[string]*
 
 
 
@@ -284,13 +283,13 @@ Required:
 
 ---
 
-**HologramAPI.Device.linkTag(tagId, deviceids)**
+**HologramAPI.Device.linkTag(tagid, deviceids)**
   
 
 
 
 Required:
-- tagId *[string]*
+- tagid *[string]*
 - deviceids *[array]*
 
 
@@ -302,13 +301,13 @@ Required:
 
 ---
 
-**HologramAPI.Device.unlinkTag(tagId, deviceids)**
+**HologramAPI.Device.unlinkTag(tagid, deviceids)**
   
 
 
 
 Required:
-- tagId *[string]*
+- tagid *[string]*
 - deviceids *[array]*
 
 
@@ -320,13 +319,13 @@ Required:
 
 ---
 
-**HologramAPI.Device.changeName(deviceId, name)**
+**HologramAPI.Device.changeName(deviceid, name)**
   
 
 
 
 Required:
-- deviceId *[string]*
+- deviceid *[string]*
 - name *[string]*
 
 
@@ -338,13 +337,13 @@ Required:
 
 ---
 
-**HologramAPI.Device.sendSMS(deviceId, message, [options])**
+**HologramAPI.Device.sendSMS(deviceid, message, [options])**
   
 
 
 
 Required:
-- deviceId *[string]*
+- deviceid *[string]*
 - message *[string]*
 
 
@@ -399,13 +398,13 @@ Required:
 
 ---
 
-**HologramAPI.Device.getPhoneNumberCost(deviceId, country, [options])**
+**HologramAPI.Device.getPhoneNumberCost(deviceid, country, [options])**
   
 
 
 
 Required:
-- deviceId *[string]*
+- deviceid *[string]*
 - country *[string]*
 
 
@@ -421,13 +420,13 @@ Options:
 
 ---
 
-**HologramAPI.Device.addPhoneNumber(deviceId, country, [options])**
+**HologramAPI.Device.addPhoneNumber(deviceid, country, [options])**
   
 
 
 
 Required:
-- deviceId *[string]*
+- deviceid *[string]*
 - country *[string]*
 
 
@@ -443,13 +442,13 @@ Options:
 
 ---
 
-**HologramAPI.Device.removePhoneNumber(deviceId)**
+**HologramAPI.Device.removePhoneNumber(deviceid)**
   
 
 
 
 Required:
-- deviceId *[string]*
+- deviceid *[string]*
 
 
 
@@ -460,13 +459,13 @@ Required:
 
 ---
 
-**HologramAPI.Device.setTunnelable(deviceId, tunnelable)**
+**HologramAPI.Device.setTunnelable(deviceid, tunnelable)**
   
 
 
 
 Required:
-- deviceId *[boolean]*
+- deviceid *[boolean]*
 - tunnelable *[boolean]*
 
 
@@ -824,13 +823,13 @@ Required:
     
 
     
-**HologramAPI.Webhook.get(deviceId)**
+**HologramAPI.Webhook.get(deviceid)**
   
 
 
 
 Required:
-- deviceId *[string]*
+- deviceid *[string]*
 
 
 
@@ -841,13 +840,13 @@ Required:
 
 ---
 
-**HologramAPI.Webhook.create(deviceId, port, protocol)**
+**HologramAPI.Webhook.create(deviceid, port, protocol)**
   
 
 
 
 Required:
-- deviceId *[string]*
+- deviceid *[string]*
 - port *[string]*
 - protocol *[string]*
 
@@ -860,13 +859,13 @@ Required:
 
 ---
 
-**HologramAPI.Webhook.update(deviceId, port, protocol)**
+**HologramAPI.Webhook.update(deviceid, port, protocol)**
   
 
 
 
 Required:
-- deviceId *[string]*
+- deviceid *[string]*
 - port *[string]*
 - protocol *[string]*
 
@@ -879,13 +878,13 @@ Required:
 
 ---
 
-**HologramAPI.Webhook.regenerate(deviceId)**
+**HologramAPI.Webhook.regenerate(deviceid)**
   
 
 
 
 Required:
-- deviceId *[string]*
+- deviceid *[string]*
 
 
 
@@ -896,13 +895,13 @@ Required:
 
 ---
 
-**HologramAPI.Webhook.remove(deviceId)**
+**HologramAPI.Webhook.remove(deviceid)**
   
 
 
 
 Required:
-- deviceId *[string]*
+- deviceid *[string]*
 
 
 
