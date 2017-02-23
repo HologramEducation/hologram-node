@@ -2,8 +2,8 @@ var express = require('express');
 var Moment = require('moment');
 var app = express();
 
-var Hologram = require('../../lib')("APIKEY", {
-  orgid: "ORGID"
+var Hologram = require('../../lib')("<Your APIkey from the hologram dashboard>", {
+  orgid: "<Your OrgId from the hologram dashboard>"
 });
 
 app.get('/device', function (req, res) {
