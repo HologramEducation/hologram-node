@@ -34,11 +34,11 @@ var HologramAPI = Hologram("Your API key from the dashboard", {
     orgid: "Your orgId from the dashboard"
   });
   
-  HologramAPI.Devices.getAll().then((devices) => {
+  HologramAPI.Device.getAll().then((devices) => {
     console.log(devices);
   });
   
-  HologramAPI.Devices.getOne("123").then((devices) => {
+  HologramAPI.Device.getOne("123").then((devices) => {
     console.log(device);
   });
   
